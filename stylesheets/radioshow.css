@@ -40,6 +40,7 @@ a:hover {
     cursor: pointer;
     padding: 18px;
     width: 100%;
+    box-sizing: border-box; /* Keeps padding inside the full-width button */
     text-align: left;
     border: none;
     outline: none;
@@ -47,12 +48,6 @@ a:hover {
     font-family: 'Lucida Console', monospace;
     font-size: 20px;
     background-color: transparent;
-}
-
-.accordion:after {
-    content: '\002B';
-    float: right;
-    margin-left: 5px;
 }
 
 .active:after {
@@ -68,4 +63,13 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    max-width: 960px; /* Limits content width on large screens */
+    margin: 0 auto;   /* Centers the expanded content */
+}
+
+/* Reduce tab indentation on smaller screens so text has room to breathe */
+@media only screen and (max-width: 767px) {
+    .tab {
+        margin-left: 1em;
+    }
 }
