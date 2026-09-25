@@ -56,3 +56,23 @@
 	    font-weight: normal;
 	    font-style: normal; }
 */
+
+
+/* Profile Image Base Styling */
+.profile-photo {
+  float: right;
+  width: 240px;
+  height: auto;
+  padding: 0 0 1.5em 2em;
+}
+
+/* Mobile Adjustment (Screens 767px and below) */
+@media only screen and (max-width: 767px) {
+  .profile-photo {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5em auto;
+    padding: 0;
+    max-width: 100%;
+  }
+}
