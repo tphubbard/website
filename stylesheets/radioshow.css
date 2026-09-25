@@ -50,21 +50,17 @@ a:hover {
     background-color: transparent;
 }
 
-.active:after {
-    content: "\2212";
-}
-
 .active, .accordion:hover {
     background-color: #333; /* Dark gray on hover for readability against black */
 }
 
+/* Accordion Panels */
 .panel {
     background-color: transparent;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    max-width: 960px; /* Limits content width on large screens */
-    margin: 0 auto;   /* Centers the expanded content */
+    max-width: 100%; /* Allows setlist content to fill wrapper width */
 }
 
 /* Reduce tab indentation on smaller screens so text has room to breathe */
@@ -72,4 +68,10 @@ a:hover {
     .tab {
         margin-left: 1em;
     }
+}
+
+/* Layout Container Override */
+#wrapper {
+    max-width: 1200px !important; /* Expands site width on large screens */
+    width: 90%;
 }
