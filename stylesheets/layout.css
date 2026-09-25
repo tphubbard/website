@@ -23,8 +23,8 @@ img {
 
 /* All Mobile Sizes (Screens 767px and below) */
 @media only screen and (max-width: 767px) {
-    /* Stack and center all images on mobile screens */
-    img {
+    /* Stack and center all images and profile photos on mobile */
+    img, .profile-photo {
         float: none;
         display: block;
         margin: 0 auto 1.5rem auto;
