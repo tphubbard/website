@@ -1,0 +1,71 @@
+/* Radio Show Specific Theme */
+body {
+    margin: 1em;
+    padding: 0;
+    color: #66ff33;
+    background-color: black;
+    font-family: 'Lucida Console', monospace;
+}
+
+/* Typography & Links */
+h1, h2, h3, h4, h5, h6 {
+    color: #66ff33;
+    font-family: 'Lucida Console', monospace;
+}
+
+.tab {
+    margin-left: 5em;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+a, a:active, a:link {
+    text-decoration: underline;
+    color: #66ff33;
+}
+
+a:visited {
+    color: #006600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Accordion UI */
+.accordion {
+    color: #66ff33;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: all 0.5s;
+    font-family: 'Lucida Console', monospace;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.accordion:after {
+    content: '\002B';
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.active, .accordion:hover {
+    background-color: #333; /* Dark gray on hover for readability against black */
+}
+
+.panel {
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
