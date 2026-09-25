@@ -34,3 +34,40 @@ img {
         padding: 0;
     }
 }
+
+/* Custom Global Site Styles */
+body {
+    font-family: Georgia, serif;
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: #000099;
+}
+a:visited {
+    color: #336699;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: #000099;
+}
+
+HR {
+    display: none;
+}
+
+DIV.hr {
+    margin: 2.0em 0;
+    height: 0.4em;
+    background-color: #000099;
+    clear: both;
+}
