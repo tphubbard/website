@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# --- Block AI Model Training ---
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# --- Allow Live AI Search & User Browsing ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+Sitemap: https://timothyhubbard.org/sitemap.xml
