@@ -3,7 +3,7 @@
   <!-- Core Landing Page -->
   <url>
     <loc>https://timothyhubbard.org/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <priority>1.0</priority>
   </url>
 
@@ -38,10 +38,8 @@
     <loc>https://timothyhubbard.org/art.html</loc>
     <priority>0.6</priority>
   </url>
-
-  <!-- Special / Hidden Pages -->
   <url>
-    <loc>https://timothyhubbard.org/easteregg.html</loc>
-    <priority>0.2</priority>
+    <loc>https://timothyhubbard.org/bartlett.html</loc>
+    <priority>0.6</priority>
   </url>
 </urlset>
